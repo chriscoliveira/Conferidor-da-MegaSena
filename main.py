@@ -20,7 +20,7 @@ class Funcao(Thread):
         print(numeros_sorteados)
         retorno = Loteria.conferente_resultados('jogos.xlsx',numeros_sorteados)
         self.status.setPlainText(retorno)
-        print(retorno)
+        # print(retorno)
 
 
 # classe que trabalha diretamente com o design UI do pyqt
@@ -43,4 +43,5 @@ if __name__ == '__main__':
     qt = QApplication(sys.argv)
     novo = Novo()
     novo.show()
+    novo.ed_numeros.setText('5,15,28,32,38,54')
     qt.exec_()
