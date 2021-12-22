@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 import numpy as np
 
-from confere import Loteria
+# from confere import Loteria
 
 
 
@@ -80,6 +80,7 @@ def conferente_resultados(planilha,resultados):
 
     if len(resultados) >= 3:
         print(mensagem)
+        pass
 
 sorteado = []
 
@@ -89,8 +90,8 @@ for x in range(6):
     sorteado.append(numeros)
     print(f'Numeros sorteados: {sorteado}')
     for y in range(len(sorteado)):
-        
-        print(' '.join(sorteado))
+        pass
+        #print(' '.join(sorteado))
     if len(sorteado) > 1:
         conferente_resultados('jogos.xlsx',' '.join(sorteado))
     
